@@ -3,7 +3,7 @@
 	"description": "TYPO3 preset configuration for PHPStan",
 	"license": "GPL-3.0-or-later",
 	"type": "library",
-	"version": "0.2.0",
+	"version": "0.1.4",
 	"authors": [
 		{
 			"name": "Konrad Michalik",

@@ -5,4 +5,5 @@ includes:
     - %rootDir%/../../spaze/phpstan-disallowed-calls/extension.neon
     - %rootDir%/../../tomasvotruba/type-coverage/config/extension.neon
     - %rootDir%/../../tomasvotruba/cognitive-complexity/config/extension.neon
+    - %rootDir%/../../rector/type-perfect/config/extension.neon
     - extension.neon

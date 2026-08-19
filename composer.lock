@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "891a9ef35cf07723c766e3765d45c040",
+    "content-hash": "21302ac95541295069e7b3205c5fba60",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5837,16 +5837,16 @@
         },
         {
             "name": "tomasvotruba/cognitive-complexity",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomasVotruba/cognitive-complexity.git",
-                "reference": "974586fbc31b448ec04cf7877767bbb775671c3f"
+                "reference": "435763b488beabc11e7d1102f6891ebe255cc3b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomasVotruba/cognitive-complexity/zipball/974586fbc31b448ec04cf7877767bbb775671c3f",
-                "reference": "974586fbc31b448ec04cf7877767bbb775671c3f",
+                "url": "https://api.github.com/repos/TomasVotruba/cognitive-complexity/zipball/435763b488beabc11e7d1102f6891ebe255cc3b8",
+                "reference": "435763b488beabc11e7d1102f6891ebe255cc3b8",
                 "shasum": ""
             },
             "require": {
@@ -5873,7 +5873,7 @@
             "description": "PHPStan rules to measure cognitive complexity of your classes and methods",
             "support": {
                 "issues": "https://github.com/TomasVotruba/cognitive-complexity/issues",
-                "source": "https://github.com/TomasVotruba/cognitive-complexity/tree/1.0.0"
+                "source": "https://github.com/TomasVotruba/cognitive-complexity/tree/1.1.1"
             },
             "funding": [
                 {
@@ -5885,7 +5885,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-13T10:28:54+00:00"
+            "time": "2026-05-25T12:12:55+00:00"
         },
         {
             "name": "tomasvotruba/type-coverage",

@@ -20,7 +20,7 @@
 		"saschaegerer/phpstan-typo3": "^1.10 || ^2.0 || ^3.0",
 		"spaze/phpstan-disallowed-calls": "^4.0",
 		"tomasvotruba/cognitive-complexity": "0.2.3 || 1.0.0",
-		"tomasvotruba/type-coverage": "^1.0 || ^2.0"
+		"tomasvotruba/type-coverage": "^1.0 || ^2.0 <2.3.0"
 	},
 	"require-dev": {
 		"armin/editorconfig-cli": "^2.0",

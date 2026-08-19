@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2c3b47963d86ece58926b16faa27d85",
+    "content-hash": "891a9ef35cf07723c766e3765d45c040",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1332,16 +1332,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.1.3",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "bb3ea637e3d131d72acc033cfc2746ee893349fe"
+                "reference": "b043439dbdf954e6c28b5ea7e34b0100f83165e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/bb3ea637e3d131d72acc033cfc2746ee893349fe",
-                "reference": "bb3ea637e3d131d72acc033cfc2746ee893349fe",
+                "url": "https://api.github.com/repos/nette/utils/zipball/b043439dbdf954e6c28b5ea7e34b0100f83165e0",
+                "reference": "b043439dbdf954e6c28b5ea7e34b0100f83165e0",
                 "shasum": ""
             },
             "require": {
@@ -1361,7 +1361,7 @@
             },
             "suggest": {
                 "ext-gd": "to use Image",
-                "ext-iconv": "to use Strings::webalize(), toAscii(), chr() and reverse()",
+                "ext-iconv": "to use Strings::chr(), ord() and reverse()",
                 "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
                 "ext-json": "to use Nette\\Utils\\Json",
                 "ext-mbstring": "to use Strings::lower() etc...",
@@ -1417,9 +1417,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.1.3"
+                "source": "https://github.com/nette/utils/tree/v4.1.5"
             },
-            "time": "2026-02-13T03:05:33+00:00"
+            "time": "2026-07-17T23:02:45+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1646,11 +1646,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.50",
+            "version": "2.2.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d452086fb4cf648c6b2d8cf3b639351f79e4f3e2",
-                "reference": "d452086fb4cf648c6b2d8cf3b639351f79e4f3e2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e285254e60f33c21902efef4a926ca0987c06804",
+                "reference": "e285254e60f33c21902efef4a926ca0987c06804",
                 "shasum": ""
             },
             "require": {
@@ -1672,6 +1672,17 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Mirtes"
+                },
+                {
+                    "name": "Markus Staab"
+                },
+                {
+                    "name": "Vincent Langlet"
+                }
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
             "keywords": [
@@ -1695,7 +1706,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-04-17T13:10:32+00:00"
+            "time": "2026-08-04T22:21:45+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -5878,22 +5889,22 @@
         },
         {
             "name": "tomasvotruba/type-coverage",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomasVotruba/type-coverage.git",
-                "reference": "468354b3964120806a69890cbeb3fcf005876391"
+                "reference": "4087caa4639bdd4c646f2984bc333efeddf69e4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomasVotruba/type-coverage/zipball/468354b3964120806a69890cbeb3fcf005876391",
-                "reference": "468354b3964120806a69890cbeb3fcf005876391",
+                "url": "https://api.github.com/repos/TomasVotruba/type-coverage/zipball/4087caa4639bdd4c646f2984bc333efeddf69e4b",
+                "reference": "4087caa4639bdd4c646f2984bc333efeddf69e4b",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^3.2 || ^4.0",
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.0"
+                "phpstan/phpstan": "^2.1.33"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -5919,7 +5930,7 @@
             ],
             "support": {
                 "issues": "https://github.com/TomasVotruba/type-coverage/issues",
-                "source": "https://github.com/TomasVotruba/type-coverage/tree/2.1.0"
+                "source": "https://github.com/TomasVotruba/type-coverage/tree/2.2.1"
             },
             "funding": [
                 {
@@ -5931,7 +5942,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-05T16:38:02+00:00"
+            "time": "2026-05-26T08:14:01+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

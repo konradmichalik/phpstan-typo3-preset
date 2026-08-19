@@ -6,4 +6,5 @@ includes:
     - %rootDir%/../../tomasvotruba/type-coverage/config/extension.neon
     - %rootDir%/../../tomasvotruba/cognitive-complexity/config/extension.neon
     - %rootDir%/../../rector/type-perfect/config/extension.neon
+    - %rootDir%/../../ergebnis/phpstan-rules/rules.neon
     - extension.neon

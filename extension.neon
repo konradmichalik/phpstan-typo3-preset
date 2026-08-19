@@ -30,6 +30,26 @@ parameters:
 		narrow_param: true
 		narrow_return: true
 
+	ergebnis:
+		declareStrictTypes:
+			enabled: true
+		final:
+			enabled: false
+		finalInAbstractClass:
+			enabled: true
+		noExtends:
+			enabled: false
+		noIsset:
+			enabled: false
+		noNullableReturnTypeDeclaration:
+			enabled: false
+		noParameterWithContainerTypeDeclaration:
+			enabled: false
+		noParameterWithNullableTypeDeclaration:
+			enabled: false
+		noParameterWithNullDefaultValue:
+			enabled: false
+
 	disallowedFunctionCalls:
 		-
 			function:

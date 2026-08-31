@@ -1,5 +1,7 @@
 <div align="center">
 
+![icon](icon.png)
+
 # TYPO3 PHPStan Preset
 
 </div>

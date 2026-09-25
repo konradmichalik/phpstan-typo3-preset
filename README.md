@@ -45,9 +45,6 @@ parameters:
 
   excludePaths:
     - .Build (?)
-
-  type_coverage:
-    constant: 0 # TODO: Remove when PHP 8.3 is minimum requirement
 ```
 
 ### ergebnis/phpstan-rules

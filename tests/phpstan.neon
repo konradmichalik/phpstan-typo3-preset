@@ -1,0 +1,9 @@
+includes:
+	- ../phpstan.neon.dist
+
+parameters:
+	level: 8
+	paths:
+		- Fixture/Classes
+	scanFiles:
+		- Fixture/Stubs/VarDumper.php

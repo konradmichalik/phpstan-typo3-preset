@@ -1,0 +1,19 @@
+[
+	"Classes/Forbidden.php:13 disallowed.function",
+	"Classes/Forbidden.php:14 disallowed.function",
+	"Classes/Forbidden.php:15 disallowed.method",
+	"Classes/Forbidden.php:16 disallowed.function",
+	"Classes/Forbidden.php:22 disallowed.variable",
+	"Classes/Forbidden.php:23 disallowed.variable",
+	"Classes/Forbidden.php:24 disallowed.variable",
+	"Classes/Forbidden.php:32 disallowed.function",
+	"Classes/Forbidden.php:37 ergebnis.noErrorSuppression",
+	"Classes/Forbidden.php:42 ergebnis.noSwitch",
+	"Classes/Forbidden.php:52 empty.notAllowed",
+	"Classes/Forbidden.php:57 staticMethod.deprecated",
+	"Classes/Forbidden.php:60 missingType.parameter",
+	"Classes/Forbidden.php:60 missingType.return",
+	"Classes/Forbidden.php:60 typeCoverage.paramTypeCoverage",
+	"Classes/Forbidden.php:60 typeCoverage.returnTypeCoverage",
+	"Classes/NoStrictTypes.php:3 ergebnis.declareStrictTypes"
+]

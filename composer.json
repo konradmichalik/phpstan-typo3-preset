@@ -57,6 +57,8 @@
 			"@lint:editorconfig"
 		],
 		"lint:composer": "@fix:composer --dry-run",
-		"lint:editorconfig": "ec --git-only"
+		"lint:editorconfig": "ec --git-only",
+		"test": "phpstan analyse -c tests/phpstan.neon --no-progress --error-format=json | php tests/check-errors.php",
+		"test:update": "phpstan analyse -c tests/phpstan.neon --no-progress --error-format=json | php tests/check-errors.php --update"
 	}
 }

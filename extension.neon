@@ -16,6 +16,10 @@ parameters:
 		constant: 100
 		declare: 70
 
+	typo3:
+		requestGetAttributeMapping:
+			route: TYPO3\CMS\Backend\Routing\Route
+
 	cognitive_complexity:
 		class: 40
 		function: 10

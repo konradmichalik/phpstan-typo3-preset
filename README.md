@@ -50,6 +50,34 @@ parameters:
     constant: 0 # TODO: Remove when PHP 8.3 is minimum requirement
 ```
 
+### ergebnis/phpstan-rules
+
+The preset runs [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) in opt-in mode (`allRules: false`), so new ergebnis releases do not enable rules silently.
+
+Enabled rules: `declareStrictTypes`, `finalInAbstractClass`, `invokeParentHookMethod`, `noAssignByReference`, `noCompact`, `noErrorSuppression`, `noEval`, `noReturnByReference`, `noSwitch`, `privateInFinalClass`, `testCaseWithSuffix`.
+
+Deliberately disabled rules:
+
+| Rule | Reason |
+|------|--------|
+| `final`, `noExtends` | TYPO3 APIs are inheritance based |
+| `noIsset` | Too restrictive for array access on TYPO3 configuration and TCA |
+| `noNullableReturnTypeDeclaration`, `noParameterWithNullableTypeDeclaration`, `noParameterWithNullDefaultValue` | Nullable types are part of many TYPO3 and Symfony APIs |
+| `noParameterWithContainerTypeDeclaration` | Not relevant for TYPO3 extensions |
+| `noNamedArgument` | Attribute APIs (`#[AsEventListener]`, Symfony `#[Route]`) and TYPO3 DTOs rely on named arguments |
+| `noConstructorParameterWithDefaultValue` | Conflicts with optional services in Symfony DI and with value objects |
+| `noParameterPassedByReference` | Signatures are dictated by TYPO3 (DataHandler hooks, `itemsProcFunc`, `userFunc`) |
+| `noPhpstanIgnore` | Reported as non-ignorable and applied inconsistently. Inline `@phpstan-ignore <identifier>` keeps the reason next to the code |
+
+Enable any of them in your project configuration if needed:
+
+```yaml
+parameters:
+  ergebnis:
+    noIsset:
+      enabled: true
+```
+
 ## 💛 Acknowledgements
 
 This project is partly based on the best practices of [tea](https://github.com/TYPO3BestPractices/tea) extension.

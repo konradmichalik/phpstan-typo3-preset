@@ -75,6 +75,12 @@ parameters:
       enabled: true
 ```
 
+### rector/type-perfect
+
+[`rector/type-perfect`](https://github.com/rectorphp/type-perfect) is deprecated and no longer receives fixes for new PHPStan releases. Its rules moved into `tomasvotruba/type-coverage` 2.3, which requires PHP 8.4 and registers the type-perfect services itself. Installing both leads to duplicate service errors, so the preset caps `tomasvotruba/type-coverage` at `<2.3.0`.
+
+Once PHP 8.4 is the minimum requirement, the preset will drop `rector/type-perfect`, require `tomasvotruba/type-coverage: ^2.3` and remove the `narrow_param` option, which has no effect there since 2.4.
+
 ## 💛 Acknowledgements
 
 This project is partly based on the best practices of [tea](https://github.com/TYPO3BestPractices/tea) extension.

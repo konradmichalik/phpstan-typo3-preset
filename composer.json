@@ -20,7 +20,7 @@
 		"rector/type-perfect": "^2.0",
 		"saschaegerer/phpstan-typo3": "^2.0 || ^3.0",
 		"spaze/phpstan-disallowed-calls": "^4.0",
-		"tomasvotruba/cognitive-complexity": "^1.0 <1.2.0",
+		"tomasvotruba/cognitive-complexity": "^1.0",
 		"tomasvotruba/type-coverage": "^2.0 <2.3.0"
 	},
 	"require-dev": {

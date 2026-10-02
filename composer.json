@@ -20,7 +20,7 @@
 		"saschaegerer/phpstan-typo3": "^2.0 || ^3.0",
 		"spaze/phpstan-disallowed-calls": "^4.0",
 		"tomasvotruba/cognitive-complexity": "^1.0",
-		"tomasvotruba/type-coverage": "^2.0 <2.3.0"
+		"tomasvotruba/type-coverage": "^2.0.1 <2.3.0"
 	},
 	"require-dev": {
 		"armin/editorconfig-cli": "^2.0",
@@ -30,8 +30,8 @@
 		"allow-plugins": {
 			"ergebnis/composer-normalize": true,
 			"phpstan/extension-installer": true,
-			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true
+			"typo3/class-alias-loader": false,
+			"typo3/cms-composer-installers": false
 		},
 		"platform": {
 			"php": "8.2.0"
@@ -57,6 +57,8 @@
 			"@lint:editorconfig"
 		],
 		"lint:composer": "@fix:composer --dry-run",
-		"lint:editorconfig": "ec --git-only"
+		"lint:editorconfig": "ec --git-only",
+		"test": "phpstan analyse -c tests/phpstan.neon --no-progress --error-format=json | php tests/check-errors.php",
+		"test:update": "phpstan analyse -c tests/phpstan.neon --no-progress --error-format=json | php tests/check-errors.php --update"
 	}
 }

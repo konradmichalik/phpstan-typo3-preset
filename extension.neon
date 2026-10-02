@@ -34,24 +34,29 @@ parameters:
 		narrow_return: true
 
 	ergebnis:
+		allRules: false
 		declareStrictTypes:
 			enabled: true
-		final:
-			enabled: false
 		finalInAbstractClass:
 			enabled: true
-		noExtends:
-			enabled: false
-		noIsset:
-			enabled: false
-		noNullableReturnTypeDeclaration:
-			enabled: false
-		noParameterWithContainerTypeDeclaration:
-			enabled: false
-		noParameterWithNullableTypeDeclaration:
-			enabled: false
-		noParameterWithNullDefaultValue:
-			enabled: false
+		invokeParentHookMethod:
+			enabled: true
+		noAssignByReference:
+			enabled: true
+		noCompact:
+			enabled: true
+		noErrorSuppression:
+			enabled: true
+		noEval:
+			enabled: true
+		noReturnByReference:
+			enabled: true
+		noSwitch:
+			enabled: true
+		privateInFinalClass:
+			enabled: true
+		testCaseWithSuffix:
+			enabled: true
 
 	disallowedFunctionCalls:
 		-

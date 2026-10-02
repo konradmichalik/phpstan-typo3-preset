@@ -61,6 +61,8 @@ parameters:
 	disallowedFunctionCalls:
 		-
 			function:
+				- 'dd()'
+				- 'dump()'
 				- 'var_dump()'
 				- 'xdebug_break()'
 				- 'debug()'
@@ -74,6 +76,7 @@ parameters:
 			method:
 				- 'TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump()'
 				- 'TYPO3\CMS\Core\Utility\DebugUtility::debug()'
+				- 'Symfony\Component\VarDumper\VarDumper::dump()'
 			message: 'Use logging instead or remove if it was for debugging purposes.'
 
 	disallowedSuperglobals:
@@ -83,4 +86,6 @@ parameters:
 				- '$_POST'
 				- '$_FILES'
 				- '$_SERVER'
+				- '$_REQUEST'
+				- '$_COOKIE'
 			message: 'Use PSR-7 API instead'

@@ -4,7 +4,7 @@
 
 ### Upgrade notes
 
-- **`rector/type-perfect` was replaced by `tomasvotruba/type-coverage` ^2.5** ([#30](https://github.com/konradmichalik/phpstan-typo3-preset/issues/30)). type-coverage 2.5 runs on PHP 7.4 or later and bundles the type-perfect rules, so the PHP constraint stays. Remove `rector/type-perfect` from your own `require-dev`, because both packages cannot be installed together. The preset no longer sets `type_perfect.narrow_param`, the rule was removed in type-coverage 2.4. `phpstan/phpstan` 2.2 or later is now required through type-coverage
+- **`rector/type-perfect` was replaced by `tomasvotruba/type-coverage` ^2.5** ([#30](https://github.com/konradmichalik/phpstan-typo3-preset/issues/30)). Remove `rector/type-perfect` from your own `require-dev`: type-coverage bundles the same rules, and PHPStan reports duplicate services when both are present. `phpstan/phpstan` 2.2 or later is now required. type-coverage 2.5 runs on PHP 7.4 or later, so the PHP constraint is unchanged. It also pulls in `entropy/entropy`, which is licensed as proprietary
 
 ## 0.5.0
 

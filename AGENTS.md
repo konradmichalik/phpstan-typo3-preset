@@ -44,7 +44,7 @@ composer test:update       # rewrite tests/expected-errors.json from the current
 
 - Follow `.editorconfig`: UTF-8, LF, final newline, 4 spaces by default. JSON and NEON files use tabs, YAML uses 2 spaces.
 - `composer.json` is normalized with `ergebnis/composer-normalize`, run `composer fix` after editing it.
-- `tomasvotruba/type-coverage` must stay at `^2.5`: since 2.3 it bundles type-perfect and registers its services itself, so `rector/type-perfect` must not be required next to it.
+- `tomasvotruba/type-coverage` stays at `^2.5`. It bundles the type-perfect rules, so do not require `rector/type-perfect` next to it.
 - No PHP-CS-Fixer, PHPStan self-analysis or Rector configuration exists here.
 
 ## CI

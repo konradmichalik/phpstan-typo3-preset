@@ -57,7 +57,7 @@ parameters:
 | [`spaze/phpstan-disallowed-calls`](https://github.com/spaze/phpstan-disallowed-calls) | The dangerous, execution, insecure and loose call lists, plus the preset rules below |
 | [`tomasvotruba/type-coverage`](https://github.com/TomasVotruba/type-coverage) | `return: 100`, `param: 95`, `property: 95`, `constant: 0` (typed constants need PHP 8.3) |
 | [`tomasvotruba/cognitive-complexity`](https://github.com/TomasVotruba/cognitive-complexity) | `class: 40`, `function: 10` |
-| [`tomasvotruba/type-coverage`](https://github.com/TomasVotruba/type-coverage) (bundled type-perfect rules) | `no_mixed_property`, `no_mixed_caller`, `null_over_false`, `narrow_return` |
+| [`tomasvotruba/type-coverage`](https://github.com/TomasVotruba/type-coverage) (bundled type-perfect rules) | `no_mixed_property`, `no_mixed_caller`, `null_over_false`, `narrow_param`, `narrow_return` |
 | [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) | Opt-in, see [below](#ergebnisphpstan-rules) |
 
 The preset disallows these calls in addition to the spaze lists:

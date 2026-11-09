@@ -9,7 +9,7 @@ Guidance for coding agents working in this repository.
 - PHP: `~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0`
 - PHPStan: `^2.1`
 - License: GPL-3.0-or-later
-- Bundled tooling: `saschaegerer/phpstan-typo3`, `phpstan/phpstan-strict-rules`, `phpstan/phpstan-deprecation-rules`, `spaze/phpstan-disallowed-calls`, `tomasvotruba/type-coverage`, `tomasvotruba/cognitive-complexity`, `rector/type-perfect`, `ergebnis/phpstan-rules`
+- Bundled tooling: `saschaegerer/phpstan-typo3`, `phpstan/phpstan-strict-rules`, `phpstan/phpstan-deprecation-rules`, `spaze/phpstan-disallowed-calls`, `tomasvotruba/type-coverage`, `tomasvotruba/cognitive-complexity`, `ergebnis/phpstan-rules`
 
 ## Structure
 
@@ -22,7 +22,7 @@ tests/               Smoke test: fixtures analysed with the preset, compared aga
 .github/workflows/   Tests workflow and release workflow (reusable workflow from konradmichalik/reusable-github-actions)
 ```
 
-- `extension.neon` holds the rules: type coverage thresholds, cognitive complexity limits, strict rules, type-perfect, ergebnis rules in opt-in mode (`allRules: false`) and the disallowed calls (`var_dump()`, `dump()`, `dd()`, `header()`, `$_GET`, `$_POST`, `$_REQUEST`, `$_COOKIE` and similar).
+- `extension.neon` holds the rules: type coverage thresholds, cognitive complexity limits, strict rules, the type-perfect rules bundled in type-coverage, ergebnis rules in opt-in mode (`allRules: false`) and the disallowed calls (`var_dump()`, `dump()`, `dd()`, `header()`, `$_GET`, `$_POST`, `$_REQUEST`, `$_COOKIE` and similar).
 - `phpstan.neon.dist` includes the third-party extension files and `extension.neon`. Keep both in sync when adding a dependency.
 
 ## Development commands
@@ -44,7 +44,7 @@ composer test:update       # rewrite tests/expected-errors.json from the current
 
 - Follow `.editorconfig`: UTF-8, LF, final newline, 4 spaces by default. JSON and NEON files use tabs, YAML uses 2 spaces.
 - `composer.json` is normalized with `ergebnis/composer-normalize`, run `composer fix` after editing it.
-- `tomasvotruba/type-coverage` is capped below 2.3.0 on purpose, because 2.3 bundles type-perfect and registers its services a second time. Do not widen the range before the migration in #30.
+- `tomasvotruba/type-coverage` stays at `^2.5`. It bundles the type-perfect rules, so do not require `rector/type-perfect` next to it.
 - No PHP-CS-Fixer, PHPStan self-analysis or Rector configuration exists here.
 
 ## CI

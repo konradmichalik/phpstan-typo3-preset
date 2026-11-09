@@ -57,7 +57,7 @@ parameters:
 | [`spaze/phpstan-disallowed-calls`](https://github.com/spaze/phpstan-disallowed-calls) | The dangerous, execution, insecure and loose call lists, plus the preset rules below |
 | [`tomasvotruba/type-coverage`](https://github.com/TomasVotruba/type-coverage) | `return: 100`, `param: 95`, `property: 95`, `constant: 0` (typed constants need PHP 8.3) |
 | [`tomasvotruba/cognitive-complexity`](https://github.com/TomasVotruba/cognitive-complexity) | `class: 40`, `function: 10` |
-| [`rector/type-perfect`](https://github.com/rectorphp/type-perfect) | `no_mixed_property`, `no_mixed_caller`, `null_over_false`, `narrow_param`, `narrow_return` |
+| [`tomasvotruba/type-coverage`](https://github.com/TomasVotruba/type-coverage) (bundled type-perfect rules) | `no_mixed_property`, `no_mixed_caller`, `null_over_false`, `narrow_return` |
 | [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) | Opt-in, see [below](#ergebnisphpstan-rules) |
 
 The preset disallows these calls in addition to the spaze lists:
@@ -92,12 +92,6 @@ parameters:
     noIsset:
       enabled: true
 ```
-
-### rector/type-perfect
-
-[`rector/type-perfect`](https://github.com/rectorphp/type-perfect) is deprecated and no longer receives fixes for new PHPStan releases. Its rules moved into `tomasvotruba/type-coverage` 2.3, which requires PHP 8.4 and registers the type-perfect services itself. Installing both leads to duplicate service errors, so the preset caps `tomasvotruba/type-coverage` at `<2.3.0`.
-
-Once PHP 8.4 is the minimum requirement, the preset will drop `rector/type-perfect`, require `tomasvotruba/type-coverage: ^2.3` and remove the `narrow_param` option, which has no effect there since 2.4.
 
 ## 🛠️ Typical Overrides
 

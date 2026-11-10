@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changes
+
+- `ergebnis.testCaseWithSuffix` is no longer enabled, because it crashes PHPStan in projects without `phpunit/phpunit` ([#38](https://github.com/konradmichalik/phpstan-typo3-preset/issues/38)). Enable it in your own configuration if PHPUnit is installed
+
 ## 0.6.0
 
 ### Upgrade notes

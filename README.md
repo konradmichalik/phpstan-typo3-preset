@@ -69,7 +69,7 @@ The preset disallows these calls in addition to the spaze lists:
 
 The preset runs [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) in opt-in mode (`allRules: false`), so new ergebnis releases do not enable rules silently.
 
-Enabled rules: `declareStrictTypes`, `finalInAbstractClass`, `invokeParentHookMethod`, `noAssignByReference`, `noCompact`, `noErrorSuppression`, `noEval`, `noReturnByReference`, `noSwitch`, `privateInFinalClass`, `testCaseWithSuffix`.
+Enabled rules: `declareStrictTypes`, `finalInAbstractClass`, `invokeParentHookMethod`, `noAssignByReference`, `noCompact`, `noErrorSuppression`, `noEval`, `noReturnByReference`, `noSwitch`, `privateInFinalClass`.
 
 Deliberately disabled rules:
 
@@ -82,6 +82,7 @@ Deliberately disabled rules:
 | `noNamedArgument` | Attribute APIs (`#[AsEventListener]`, Symfony `#[Route]`) and TYPO3 DTOs rely on named arguments |
 | `noConstructorParameterWithDefaultValue` | Conflicts with optional services in Symfony DI and with value objects |
 | `noParameterPassedByReference` | Signatures are dictated by TYPO3 (DataHandler hooks, `itemsProcFunc`, `userFunc`) |
+| `testCaseWithSuffix` | Crashes PHPStan in projects without `phpunit/phpunit`, because the rule looks up `PHPUnit\Framework\TestCase` without checking that it exists ([#38](https://github.com/konradmichalik/phpstan-typo3-preset/issues/38)). Enable it only in projects that have PHPUnit installed |
 | `noPhpstanIgnore` | Reported as non-ignorable and applied inconsistently. Inline `@phpstan-ignore <identifier>` keeps the reason next to the code |
 
 Enable any of them in your project configuration if needed:

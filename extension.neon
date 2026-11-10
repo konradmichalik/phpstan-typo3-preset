@@ -55,8 +55,6 @@ parameters:
 			enabled: true
 		privateInFinalClass:
 			enabled: true
-		testCaseWithSuffix:
-			enabled: true
 
 	disallowedFunctionCalls:
 		-

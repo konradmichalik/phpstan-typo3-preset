@@ -1,4 +1,8 @@
 [
+	"Classes/Clock.php:15 disallowed.function",
+	"Classes/Clock.php:20 disallowed.function",
+	"Classes/Clock.php:30 disallowed.new",
+	"Classes/Clock.php:35 disallowed.new",
 	"Classes/Forbidden.php:13 disallowed.function",
 	"Classes/Forbidden.php:14 disallowed.function",
 	"Classes/Forbidden.php:15 disallowed.method",

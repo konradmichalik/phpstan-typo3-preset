@@ -22,7 +22,7 @@ tests/               Smoke test: fixtures analysed with the preset, compared aga
 .github/workflows/   Tests workflow and release workflow (reusable workflow from konradmichalik/reusable-github-actions)
 ```
 
-- `extension.neon` holds the rules: type coverage thresholds, cognitive complexity limits, strict rules, the type-perfect rules bundled in type-coverage, ergebnis rules in opt-in mode (`allRules: false`) and the disallowed calls (`var_dump()`, `dump()`, `dd()`, `header()`, `$_GET`, `$_POST`, `$_REQUEST`, `$_COOKIE` and similar). `reportIgnoresWithoutComments` is enabled, so every inline `@phpstan-ignore` needs a reason.
+- `extension.neon` holds the rules: type coverage thresholds, cognitive complexity limits, strict rules, the type-perfect rules bundled in type-coverage, ergebnis rules in opt-in mode (`allRules: false`) and the disallowed calls (`var_dump()`, `dump()`, `dd()`, `header()`, `$_GET`, `$_POST`, `$_REQUEST`, `$_COOKIE`, system clock reads such as `time()` and `new DateTimeImmutable()`, and similar). `reportIgnoresWithoutComments` is enabled, so every inline `@phpstan-ignore` needs a reason.
 - `phpstan.neon.dist` includes the third-party extension files and `extension.neon`. Keep both in sync when adding a dependency.
 
 ## Development commands

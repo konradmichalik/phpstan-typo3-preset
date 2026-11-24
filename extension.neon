@@ -71,6 +71,13 @@ parameters:
 			function: 'header()'
 			message: 'Use PSR-7 API instead'
 		-
+			function: 'json_decode()'
+			message: 'Pass JSON_THROW_ON_ERROR, otherwise a parse error is indistinguishable from the literal null'
+			allowParamFlagsAnywhere:
+				-
+					position: 4
+					value: 4194304 # JSON_THROW_ON_ERROR
+		-
 			function: 'time()'
 			message: 'Read the date aspect instead: $context->getPropertyFromAspect(''date'', ''timestamp'')'
 		-

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Upgrade notes
+
+- **Inline ignores require a reason** ([#44](https://github.com/konradmichalik/phpstan-typo3-preset/issues/44)). `reportIgnoresWithoutComments` is enabled, so `@phpstan-ignore <identifier>` must become `@phpstan-ignore <identifier> (reason)`. Replace `@phpstan-ignore-line` and `@phpstan-ignore-next-line` with an identifier and a reason, or move the entries to the baseline
+
 ## 0.6.1
 
 ### Upgrade notes

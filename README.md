@@ -65,6 +65,8 @@ The preset disallows these calls in addition to the spaze lists:
 - Debug calls: `var_dump()`, `dump()`, `dd()`, `xdebug_break()`, `debug()`, `DebuggerUtility::var_dump()`, `DebugUtility::debug()`, `VarDumper::dump()`
 - `header()` and the superglobals `$_GET`, `$_POST`, `$_FILES`, `$_SERVER`, `$_REQUEST`, `$_COOKIE` (use the PSR-7 API instead)
 
+Inline ignores need a reason: `@phpstan-ignore <identifier> (reason)`. PHPStan reports ignores without one (`reportIgnoresWithoutComments`).
+
 ### ergebnis/phpstan-rules
 
 The preset runs [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) in opt-in mode (`allRules: false`), so new ergebnis releases do not enable rules silently.

@@ -59,6 +59,7 @@ parameters:
 | [`tomasvotruba/cognitive-complexity`](https://github.com/TomasVotruba/cognitive-complexity) | `class: 40`, `function: 10` |
 | [`tomasvotruba/type-coverage`](https://github.com/TomasVotruba/type-coverage) (bundled type-perfect rules) | `no_mixed_property`, `no_mixed_caller`, `null_over_false`, `narrow_param`, `narrow_return` |
 | [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) | Opt-in, see [below](#ergebnisphpstan-rules) |
+| [`konradmichalik/phpstan-exception-codes`](https://github.com/konradmichalik/phpstan-exception-codes) | Every `throw` needs a unique code between `1000000000` and `2147483647` |
 
 The preset disallows these calls in addition to the spaze lists:
 

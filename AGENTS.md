@@ -9,7 +9,7 @@ Guidance for coding agents working in this repository.
 - PHP: `~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0`
 - PHPStan: `^2.1`
 - License: GPL-3.0-or-later
-- Bundled tooling: `saschaegerer/phpstan-typo3`, `phpstan/phpstan-strict-rules`, `phpstan/phpstan-deprecation-rules`, `spaze/phpstan-disallowed-calls`, `tomasvotruba/type-coverage`, `tomasvotruba/cognitive-complexity`, `ergebnis/phpstan-rules`
+- Bundled tooling: `saschaegerer/phpstan-typo3`, `phpstan/phpstan-strict-rules`, `phpstan/phpstan-deprecation-rules`, `spaze/phpstan-disallowed-calls`, `tomasvotruba/type-coverage`, `tomasvotruba/cognitive-complexity`, `ergebnis/phpstan-rules`, `konradmichalik/phpstan-exception-codes`
 
 ## Structure
 

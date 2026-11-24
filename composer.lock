@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9e9f2572bc3f6587053280a6f06625d",
+    "content-hash": "a0f1cee466c0a7b431c234aed3e32e97",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1321,6 +1321,60 @@
                 }
             ],
             "time": "2026-03-10T16:41:02+00:00"
+        },
+        {
+            "name": "konradmichalik/phpstan-exception-codes",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/konradmichalik/phpstan-exception-codes.git",
+                "reference": "97379822243fe48134143fd25abac62eee0d9fc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/konradmichalik/phpstan-exception-codes/zipball/97379822243fe48134143fd25abac62eee0d9fc2",
+                "reference": "97379822243fe48134143fd25abac62eee0d9fc2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
+                "phpstan/phpstan": "^2.1"
+            },
+            "require-dev": {
+                "armin/editorconfig-cli": "^2.0",
+                "ergebnis/composer-normalize": "^2.44",
+                "phpunit/phpunit": "^11.5 || ^12.0"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KonradMichalik\\PhpStanExceptionCodes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Konrad Michalik",
+                    "email": "hej@konradmichalik.dev",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "PHPStan rules for unique, plausible exception codes, as TYPO3 expects them",
+            "support": {
+                "issues": "https://github.com/konradmichalik/phpstan-exception-codes/issues",
+                "source": "https://github.com/konradmichalik/phpstan-exception-codes/tree/0.1.0"
+            },
+            "time": "2026-11-24T19:56:09+00:00"
         },
         {
             "name": "lolli42/finediff",

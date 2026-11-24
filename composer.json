@@ -13,6 +13,7 @@
 	"require": {
 		"php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
 		"ergebnis/phpstan-rules": "^2.13",
+		"konradmichalik/phpstan-exception-codes": "^0.1",
 		"phpstan/phpstan": "^2.1",
 		"phpstan/phpstan-deprecation-rules": "^2.0",
 		"phpstan/phpstan-strict-rules": "^2.0",

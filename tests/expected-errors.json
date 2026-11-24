@@ -21,5 +21,6 @@
 	"Classes/Forbidden.php:60 typeCoverage.returnTypeCoverage",
 	"Classes/IgnoreWithoutReason.php:12 ignore.noComment",
 	"Classes/IgnoreWithoutReason.php:12 staticMethod.deprecated",
+	"Classes/Json.php:11 disallowed.function",
 	"Classes/NoStrictTypes.php:3 ergebnis.declareStrictTypes"
 ]

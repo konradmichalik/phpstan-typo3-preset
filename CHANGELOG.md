@@ -6,6 +6,7 @@
 
 - **Inline ignores require a reason** ([#44](https://github.com/konradmichalik/phpstan-typo3-preset/issues/44)). `reportIgnoresWithoutComments` is enabled, so `@phpstan-ignore <identifier>` must become `@phpstan-ignore <identifier> (reason)`. Replace `@phpstan-ignore-line` and `@phpstan-ignore-next-line` with an identifier and a reason, or move the entries to the baseline
 - **System clock reads are disallowed** ([#42](https://github.com/konradmichalik/phpstan-typo3-preset/issues/42)). `time()`, `date()` without a timestamp and `new DateTimeImmutable()` without argument or with `'now'` report `disallowed.function` or `disallowed.new`. Read the date aspect instead (`$context->getPropertyFromAspect('date', 'timestamp')` or `'full'`), which `#[FreezeTime]` from `konradmichalik/ttt` can pin in tests. Code that cannot use the aspect, such as CLI-only code, goes into the baseline
+- **`json_decode()` requires `JSON_THROW_ON_ERROR`** ([#43](https://github.com/konradmichalik/phpstan-typo3-preset/issues/43)). Calls without the flag report `disallowed.function`. Pass `JSON_THROW_ON_ERROR` as the fourth argument, or move the entries to the baseline
 
 ## 0.6.1
 

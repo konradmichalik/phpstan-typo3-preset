@@ -15,5 +15,7 @@
 	"Classes/Forbidden.php:60 missingType.return",
 	"Classes/Forbidden.php:60 typeCoverage.paramTypeCoverage",
 	"Classes/Forbidden.php:60 typeCoverage.returnTypeCoverage",
+	"Classes/IgnoreWithoutReason.php:12 ignore.noComment",
+	"Classes/IgnoreWithoutReason.php:12 staticMethod.deprecated",
 	"Classes/NoStrictTypes.php:3 ergebnis.declareStrictTypes"
 ]

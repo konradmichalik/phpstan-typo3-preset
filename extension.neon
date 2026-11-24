@@ -6,6 +6,8 @@ includes:
 
 # @see https://github.com/TYPO3BestPractices/tea/blob/main/Build/phpstan/phpstan.neon
 parameters:
+	reportIgnoresWithoutComments: true
+
 	parallel:
 		maximumNumberOfProcesses: 5
 

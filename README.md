@@ -65,6 +65,8 @@ The preset disallows these calls in addition to the spaze lists:
 - Debug calls: `var_dump()`, `dump()`, `dd()`, `xdebug_break()`, `debug()`, `DebuggerUtility::var_dump()`, `DebugUtility::debug()`, `VarDumper::dump()`
 - `header()` and the superglobals `$_GET`, `$_POST`, `$_FILES`, `$_SERVER`, `$_REQUEST`, `$_COOKIE` (use the PSR-7 API instead)
 
+Inline ignores need a reason: `@phpstan-ignore <identifier> (reason)`. PHPStan reports ignores without one (`reportIgnoresWithoutComments`).
+
 ### ergebnis/phpstan-rules
 
 The preset runs [`ergebnis/phpstan-rules`](https://github.com/ergebnis/phpstan-rules) in opt-in mode (`allRules: false`), so new ergebnis releases do not enable rules silently.
@@ -83,7 +85,7 @@ Deliberately disabled rules:
 | `noConstructorParameterWithDefaultValue` | Conflicts with optional services in Symfony DI and with value objects |
 | `noParameterPassedByReference` | Signatures are dictated by TYPO3 (DataHandler hooks, `itemsProcFunc`, `userFunc`) |
 | `testCaseWithSuffix` | Crashes PHPStan in projects without `phpunit/phpunit`, because the rule looks up `PHPUnit\Framework\TestCase` without checking that it exists ([#38](https://github.com/konradmichalik/phpstan-typo3-preset/issues/38)). Enable it only in projects that have PHPUnit installed |
-| `noPhpstanIgnore` | Reported as non-ignorable and applied inconsistently. Inline `@phpstan-ignore <identifier>` keeps the reason next to the code |
+| `noPhpstanIgnore` | Reported as non-ignorable and applied inconsistently. Inline `@phpstan-ignore <identifier> (reason)` keeps the reason next to the code |
 
 Enable any of them in your project configuration if needed:
 

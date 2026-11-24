@@ -6,7 +6,7 @@ Guidance for coding agents working in this repository.
 
 `konradmichalik/phpstan-typo3-preset` is a Composer library that ships a TYPO3 preset configuration for PHPStan. It contains configuration only, there is no PHP source code. It is intended for the maintainer's own projects and is not designed for general use.
 
-- PHP: `~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0`
+- PHP: `~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0`
 - PHPStan: `^2.1`
 - License: GPL-3.0-or-later
 - Bundled tooling: `saschaegerer/phpstan-typo3`, `phpstan/phpstan-strict-rules`, `phpstan/phpstan-deprecation-rules`, `spaze/phpstan-disallowed-calls`, `tomasvotruba/type-coverage`, `tomasvotruba/cognitive-complexity`, `ergebnis/phpstan-rules`
@@ -49,7 +49,7 @@ composer test:update       # rewrite tests/expected-errors.json from the current
 
 ## CI
 
-- `tests.yml` runs `composer validate --strict`, `composer lint` and `composer test` on PHP 8.2 to 8.5 with lowest and highest dependencies.
+- `tests.yml` runs `composer validate --strict`, `composer lint` and `composer test` on PHP 8.2 to 8.6 with lowest and highest dependencies.
 - `release.yml` runs on tag push and delegates to a reusable release workflow. GitHub generates the release notes from the merged pull requests, so keep `CHANGELOG.md` up to date by hand.
 
 ## Git workflow

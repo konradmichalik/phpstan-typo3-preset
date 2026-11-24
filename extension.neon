@@ -70,6 +70,30 @@ parameters:
 		-
 			function: 'header()'
 			message: 'Use PSR-7 API instead'
+		-
+			function: 'time()'
+			message: 'Read the date aspect instead: $context->getPropertyFromAspect(''date'', ''timestamp'')'
+		-
+			function: 'date()'
+			message: 'Pass a timestamp from the date aspect: $context->getPropertyFromAspect(''date'', ''timestamp'')'
+			allowParamsAnywhereAnyValue:
+				-
+					position: 2
+
+	disallowedMethodCalls:
+		-
+			method: 'DateTimeImmutable::__construct()'
+			message: 'Read the date aspect instead: $context->getPropertyFromAspect(''date'', ''full'')'
+			allowParamsAnywhereAnyValue:
+				-
+					position: 1
+		-
+			method: 'DateTimeImmutable::__construct()'
+			message: 'Read the date aspect instead: $context->getPropertyFromAspect(''date'', ''full'')'
+			disallowCaseInsensitiveParams:
+				-
+					position: 1
+					value: 'now'
 
 	disallowedStaticCalls:
 		-

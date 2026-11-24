@@ -63,6 +63,7 @@ parameters:
 The preset disallows these calls in addition to the spaze lists:
 
 - Debug calls: `var_dump()`, `dump()`, `dd()`, `xdebug_break()`, `debug()`, `DebuggerUtility::var_dump()`, `DebugUtility::debug()`, `VarDumper::dump()`
+- System clock reads: `time()`, `date()` without a timestamp and `new DateTimeImmutable()` without argument or with `'now'`. Read the date aspect instead, so `#[FreezeTime]` from `konradmichalik/ttt` works in tests. Mutable `DateTime` is not covered
 - `header()` and the superglobals `$_GET`, `$_POST`, `$_FILES`, `$_SERVER`, `$_REQUEST`, `$_COOKIE` (use the PSR-7 API instead)
 
 Inline ignores need a reason: `@phpstan-ignore <identifier> (reason)`. PHPStan reports ignores without one (`reportIgnoresWithoutComments`).
